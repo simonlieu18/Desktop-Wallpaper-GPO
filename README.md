@@ -48,6 +48,20 @@ Next, input the images into the shareable folder that will be used for the deskt
 </p>
 <br />
 
+<img width="747" height="480" alt="Screenshot 2026-01-05 at 2 35 44 PM" src="https://github.com/user-attachments/assets/2dfae8f8-bddf-48f2-8067-edc3d43ac443" />
+
+<p>
+To configure the newly created GPO, click edit on it, then head to User configuration --> Policies --> Administrative templates --> Desktop --> Desktop --> Desktop wallpaper
+</p>
+<br />
+
+
+
+<p>
+From here, you click "Enabled" and then input the file location of the image that you want to use for the wallpaper. The path should be "\\HOSTNAME\FOLDER\FILE", for example my image is a JPG file and the name of the file is "gt-r" so the full path that I would use it "\\dc-1\wallpapers\gt-r.jpg".
+</p>
+<br />
+
 <img width="372" height="94" alt="Screenshot 2026-01-05 at 2 26 02 PM" src="https://github.com/user-attachments/assets/25a1bec7-59a1-4239-bfb3-c46eee130714" />
 
 <p>
