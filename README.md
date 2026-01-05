@@ -55,17 +55,24 @@ To configure the newly created GPO, click edit on it, then head to User configur
 </p>
 <br />
 
+<img width="372" height="94" alt="Screenshot 2026-01-05 at 2 26 02 PM" src="https://github.com/user-attachments/assets/25a1bec7-59a1-4239-bfb3-c46eee130714" />
 
+<p>
+In the Group Policy Management application, locate "Group Policy Objects" and add a new policy called "Desktop Wallpaper Policy" along with the department name if needed.
+</p>
+<br />
+
+<img width="671" height="592" alt="Screenshot 2026-01-05 at 2 42 47 PM" src="https://github.com/user-attachments/assets/3143b67d-0dbc-4567-a9b0-653b5ded2fcf" />
 
 <p>
 From here, you click "Enabled" and then input the file location of the image that you want to use for the wallpaper. The path should be "\\HOSTNAME\FOLDER\FILE", for example my image is a JPG file and the name of the file is "gt-r" so the full path that I would use it "\\dc-1\wallpapers\gt-r.jpg".
 </p>
 <br />
 
-<img width="372" height="94" alt="Screenshot 2026-01-05 at 2 26 02 PM" src="https://github.com/user-attachments/assets/25a1bec7-59a1-4239-bfb3-c46eee130714" />
+<img width="375" height="282" alt="Screenshot 2026-01-05 at 3 45 47 PM" src="https://github.com/user-attachments/assets/cb178a79-dc6f-4307-8943-5171c1a2c68c" />
 
 <p>
-In the Group Policy Management application, locate "Group Policy Objects" and add a new policy called "Desktop Wallpaper Policy" along with the department name if needed.
+Now drag and drop the GPO into the correct organizational unit that is correlated to the users/departments.
 </p>
 <br />
 
