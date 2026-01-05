@@ -3,13 +3,13 @@
 </p>
 
 <h1>Desktop Wallpaper GPO</h1>
-In this tutorial, we implement a new account lockout policy in Active Directory using Group Policy Management.<br />
+In this tutorial, we implement a desktop wallpaper policy in Active Directory using Group Policy Management.<br />
 
 
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure/Hyper-V
 - Remote Desktop
 - Group Policy Management Console
 - Active Directory Domain Services
@@ -17,33 +17,41 @@ In this tutorial, we implement a new account lockout policy in Active Directory 
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
+- Windows Server 2025
 
 <h2>High-Level Steps</h2>
 
-- Add Group Policy Objects
+- Create Shareable Folder
 - Configure Desktop Wallpaper policy
-- Verify Policy with different departments
+- Verify Policy with Different Departments
 
 <h2>Configuration Steps</h2>
 
-![image](https://github.com/user-attachments/assets/8e4a1a44-e0cf-42d5-a36f-b40b9a729893)
+<img width="671" height="579" alt="Screenshot 2026-01-05 at 2 08 40 PM" src="https://github.com/user-attachments/assets/457fc520-9a6b-41a0-8f20-0be5ecdc6031" />
 
 <p>
-On the domain controller virtual machine created previously, in the Group Policy Management application locate "Group Policy Objects" and add a new policy called "Account Lockout Policy" or if there already is a policy linked to the domain then just skip this step.
+First, a sharable folder needs to be created so that different departments are able to access the correct image for their wallpaper. To do that, a new folder will need to be created in the "C:" drive of the domain controller VM. After that, the folder's properties will need to be adjusted so that it will be shareable. By going into properties, sharing tab, advanced sharing, and then having "Share this folder" checked.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/388eb47f-8c69-41ab-92ff-ef8432f11254)
+<img width="1212" height="636" alt="Screenshot 2026-01-05 at 2 15 21 PM" src="https://github.com/user-attachments/assets/06266e8c-e5a1-43ac-b1cf-4f3ed7801a80" />
 
 <p>
-Edit the policy, navigate to "Account Lockout Policy" and configure the policy as needed.
+Now, on the client VM, sign in as a user to verify that the folder has been shared correctly. To view the folder, open the folder explorer application and input "\\HOSTNAME". In order to find hostname of your DC, open command line/powershell and type in hostname on your DC VM.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/ca55fe10-a157-4ac9-8da1-f049da1ee459)
+<img width="929" height="382" alt="Screenshot 2026-01-05 at 2 22 40 PM" src="https://github.com/user-attachments/assets/4e0622a3-76a5-470a-afbe-413004687bfa" />
 
 <p>
-Link the organizational unit/domain to the new policy that was created unless the policy was already connected.
+Next, input the images into the shareable folder that will be used for the desktop wallpapers.
+</p>
+<br />
+
+<img width="372" height="94" alt="Screenshot 2026-01-05 at 2 26 02 PM" src="https://github.com/user-attachments/assets/25a1bec7-59a1-4239-bfb3-c46eee130714" />
+
+<p>
+In the Group Policy Management application, locate "Group Policy Objects" and add a new policy called "Desktop Wallpaper Policy" along with the department name if needed.
 </p>
 <br />
 
