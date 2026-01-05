@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/G0Ls18P.png"/>
 </p>
 
-<h1>Group Policy Management</h1>
+<h1>Desktop Wallpaper GPO</h1>
 In this tutorial, we implement a new account lockout policy in Active Directory using Group Policy Management.<br />
 
 
