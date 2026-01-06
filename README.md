@@ -78,7 +78,7 @@ Now drag and drop the GPO into the correct organizational unit that is correlate
 <br />
 
 <img width="50%" alt="Screenshot 2026-01-06 at 9 17 11 AM" src="https://github.com/user-attachments/assets/cb47c1a1-4c2e-4e3b-978a-03b988629841" />
-<img width="50%" alt="Screenshot 2026-01-06 at 9 17 19 AM" src="https://github.com/user-attachments/assets/73c0cb8c-eadb-4649-9ee0-42c43945eb30" />
+<img width="50%" alt="Screenshot 2026-01-06 at 9 43 56 AM" src="https://github.com/user-attachments/assets/1b2f197c-1a7b-43b1-ad6a-7f566fcd8045" />
 
 <p>
 Now on the client virtual machine, manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run the command "gpresult /r" to verify that the policy has been applied.
